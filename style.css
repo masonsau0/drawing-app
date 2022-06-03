@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');     /* imports custom font */
+
+/* 
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height:
+*/
+* {
+    box-sizing: border-box;     
+}
+
+body {
+    background-color: #909090;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    overflow: hidden;     /* disable scroll */
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: -0.7rem;
+    margin-bottom: -0.5rem;
+    padding-left: 9rem;
+    text-shadow: 5px 5px 5px #153dc1;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 0 5px 10px #c30f0f;
+    background-color: #c8aeae;
+    width: 100px;
+    height: 600px;
+    margin-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.toolbox #color {
+    height: 200px;
+}
+
+.toolbox button {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    margin: 0.2rem;
+    padding: 1rem;
+}
+
+.toolbox .size-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbox #increase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.1rem;
+}
+
+.toolbox  #decrease {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.2rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.toolbox #clear {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+canvas {
+    border: 10px solid black;
+    box-shadow: 0 20px 20px #3b06ae;
+    background-color: #ececec;
+}
